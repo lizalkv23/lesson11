@@ -1,0 +1,108 @@
+body {
+   font-family: "inter", sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+a {
+   display: inline-block;
+   color: inherit;
+}
+
+.wrapper {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+}
+
+.header {
+   background-color: greenyellow;
+   opacity: 0.9;
+   position: fixed;
+   width: 100%;
+   z-index: 50;
+}
+
+.container {
+   max-width: 830px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header__menu {
+   display: flex;
+   justify-content: space-around;
+}
+
+.header__list {
+   padding: 25px 0px;
+}
+
+.car {
+   min-height: 800px;
+   background: url(../img/1.jpg)50%/cover no-repeat;
+}
+
+.car__body {
+   position: relative;
+}
+
+.car__top {
+   position: absolute;
+   width: 22%;
+   height: 88px;
+   background-color: rgb(11, 12, 12);
+   top: 555px;
+   right: 45%;
+   border: 1px solid #000;
+   border-radius: 50% 50% 50px 50px;
+   box-shadow: 5px 5px 5px rgb(48, 23, 23);
+}
+
+.car__wheel-right {
+   position: absolute;
+   width: 8%;
+   height: 40px;
+   background-color: rgb(66, 240, 50);
+   top: 630px;
+   left: 33%;
+   border: 1px solid #000;
+   border-radius: 50%;
+   box-shadow: 2px -2px 2px rgb(167, 232, 198);
+}
+
+.car__left-wheel {
+   position: absolute;
+   width: 8%;
+   height: 40px;
+   background-color: rgb(71, 188, 24);
+   top: 630px;
+   right: 44%;
+   border: 1px solid #000;
+   border-radius: 50%;
+   box-shadow: 2px -2px 2px rgb(167, 232, 198);
+}
+
+.footer {
+   background-color: rgba(183, 26, 246, 0.848);
+   padding: 15px 0;
+}
+
+.footer__quote {
+   font-family: "inter", sans-serif;
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+   position: relative;
+}
+
+.footer__quote::after {
+   content: "😅";
+   width: 10px;
+   height: 10px;
+   position: absolute;
+}
+
+.footer__quote:hover::after {
+   filter: hue-rotate(200deg);
+}
